@@ -5,7 +5,7 @@ subtitle:   "微服务架构下的认证和鉴权方案探讨"
 description: "微服务架构的引入为软件应用带来了诸多好处：包括小开发团队，缩短开发周期，语言选择灵活性，增强服务伸缩能力等。与此同时，也引入了分布式系统的诸多复杂问题。其中一个挑战就是如何在微服务架构中实现一个灵活，安全，高效的认证和鉴权方案。本文将尝试就此问题进行一次比较完整的探讨。"
 excerpt: "微服务架构的引入为软件应用带来了诸多好处：包括小开发团队，缩短开发周期，语言选择灵活性，增强服务伸缩能力等。与此同时，也引入了分布式系统的诸多复杂问题。其中一个挑战就是如何在微服务架构中实现一个灵活，安全，高效的认证和鉴权方案。本文将尝试就此问题进行一次比较完整的探讨。"
 date:       2018-02-03 12:00:00
-author:     "赵化冰"
+author:     "常振林"
 image: "/img/2018-02-03-authentication-and-authorization-of-microservice/AuthenticationTrack.jpeg"
 published: true
 tags:
@@ -133,7 +133,7 @@ Authorization: Bearer mF_9.B5f-4.1JqM
 
 使用API Token来访问Github API
 ```
-curl -u zhaohuabing:fbdf8e8862252ed0f3ba9dba4e328c01ac93aeec https://api.github.com/user
+curl -u Changzhenlin:fbdf8e8862252ed0f3ba9dba4e328c01ac93aeec https://api.github.com/user
 
 ```
 使用API Token而不是直接使用用户名/密码来访问API的好处是降低了用户密码暴露的风险，并且可以随时收回Token的权限而不用修改密码。

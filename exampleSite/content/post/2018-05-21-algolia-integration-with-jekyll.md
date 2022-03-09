@@ -3,7 +3,7 @@ layout:     post
 title:      "使用Algolia为Gitpage博客提供站内搜索"
 subtitle:   ""
 date:       2018-05-21 11:00:00
-author:     "赵化冰"
+author:     "常振林"
 image: "/img/2018-05-06-cryptocurrency_week1/bitcoin_header.jpg"
 published: false 
 tags:
@@ -177,4 +177,4 @@ public class TxHandler {
 ## All the Example Codes on GitHub
 I wrap the codes into a maven project, just run ```mvn test``` then the example codes will build and run all the test cases.
 
-[Scrooge Coin example in Java](https://github.com/zhaohuabing/scroogecoin)
+[Scrooge Coin example in Java](https://github.com/Changzhenlin/scroogecoin)

@@ -4,7 +4,7 @@ title:      "Nginx开源Service Mesh组件Nginmesh安装指南"
 subtitle:   ""
 description: "Nginmesh是NGINX的Service Mesh开源项目，用于Istio服务网格平台中的数据面代理。它旨在提供七层负载均衡和服务路由功能，与Istio集成作为sidecar部署，并将以“标准，可靠和安全的方式”使得服务间通信更容易。Nginmesh在今年底已经连续发布了0.2和0.3版本，提供了服务发现，请求转发，路由规则，性能指标收集等功能。本文介绍如何采用kubeadmin安装kubernetes集群并部署Nginmesh sidecar。"
 date:       2018-01-02 12:00:00
-author:     "赵化冰"
+author:     "常振林"
 image: "img/post-bg-2015.jpg"
 published: true
 tags:
@@ -115,7 +115,7 @@ istio-pilot     ClusterIP      10.111.110.65   <none>        15003/TCP,443/TCP  
 ```
 http://10.12.5.31:32765/productpage
 ```
-想要了解更多关于如何从集群外部进行访问的内容，可以参考[如何从外部访问Kubernetes集群中的应用？](http://zhaohuabing.com/2017/11/28/access-application-from-outside/)
+想要了解更多关于如何从集群外部进行访问的内容，可以参考[如何从外部访问Kubernetes集群中的应用？](http://Changzhenlin.com/2017/11/28/access-application-from-outside/)
 
 ## 查看自动注入的sidecar
 使用 kubectl get pod reviews-v3-5fff595d9b-zsb2q -o yaml 命令查看Bookinfo应用的reviews服务的Pod。
@@ -373,7 +373,7 @@ iptables -t nat -N ISTIO_OUTPUT                                               -m
 
 ## 关联阅读
 
-[Istio及Bookinfo示例程序安装试用笔记](http://zhaohuabing.com/2017/11/04/istio-install_and_example/)
+[Istio及Bookinfo示例程序安装试用笔记](http://Changzhenlin.com/2017/11/04/istio-install_and_example/)
 
 ## 参考
 

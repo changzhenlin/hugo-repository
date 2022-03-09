@@ -1,4 +1,4 @@
-![](/img/zhaohuabing.png)  **_Huabing Zhao_** is an ICT veteran with a passion for open source. He has a solid experience in the telecommunication and information technology industry for more than 17 years.
+![](/img/Changzhenlin.png)  **_Huabing Zhao_** is an ICT veteran with a passion for open source. He has a solid experience in the telecommunication and information technology industry for more than 17 years.
 
 Throughout his career, he has built a number of large-scale, cross-country OSS/BSS platforms/systems and operation tools, most of them are still running in productions.
 
@@ -14,7 +14,7 @@ He is happy with his current job, but also willing to take new challenges if the
 
 While he is not working, he enjoys watching movies, swimming, hiking, travelling, writing blogs and learning languages.
 
-Feel free to connect Huabing via Github (https://github.com/zhaohuabing) or drop him an email (zhaohuabing@gmail.com).
+Feel free to connect Huabing via Github (https://github.com/Changzhenlin) or drop him an email (Changzhenlin@gmail.com).
 
 ## Talks
 

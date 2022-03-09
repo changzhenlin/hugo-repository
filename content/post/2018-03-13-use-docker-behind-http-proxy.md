@@ -4,7 +4,7 @@ title:      "如何配置docker使用HTTP代理"
 subtitle:   ""
 description: "如何配置docker使用HTTP代理"
 date:       2018-03-13 18:00:00
-author:     "赵化冰"
+author:     "常振林"
 image: "/img/docker.jpg"
 published: true
 tags:

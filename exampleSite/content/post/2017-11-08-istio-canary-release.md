@@ -4,7 +4,7 @@ subtitle:   "用户无感知的平滑业务升级"
 description: "当应用上线以后，运维面临的一大挑战是如何能在不影响已上线业务的情况下进行升级。本文将介绍如何使用Istio实现应用的灰度发布（金丝雀发布）"
 excerpt: "当应用上线以后，运维面临的一大挑战是如何能在不影响已上线业务的情况下进行升级。本文将介绍如何使用Istio实现应用的灰度发布（金丝雀发布）"
 date:       2017-11-08 15:00:00
-author:     "赵化冰"
+author:     "常振林"
 image: "/img/istio-canary-release/canary_bg.jpg"
 published: true
 tags:
@@ -51,7 +51,7 @@ Istio通过高度的抽象和良好的设计采用一致的方式解决了该问
 ## 操作步骤
 下面采用Istion自带的BookinfoInfo示例程序来试验灰度发布的流程。
 ### 测试环境安装
-首先参考[手把手教你从零搭建Istio及Bookinfo示例程序](http://zhaohuabing.com/2017/11/04/istio-install_and_example/)安装Kubernetes及Istio控制面。
+首先参考[手把手教你从零搭建Istio及Bookinfo示例程序](http://Changzhenlin.com/2017/11/04/istio-install_and_example/)安装Kubernetes及Istio控制面。
 
 因为本试验并不需要安装全部3个版本的reviews服务，因此如果已经安装了该应用，先采用下面的命令卸载。
 
