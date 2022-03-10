@@ -17,7 +17,7 @@ home = ["HTML", "RSS", "Algolia"]
   SEOTitle = "常振林的博客 | Changzhenlin Blog"
   description = "常振林，程序员, 开源爱好者，生活探险家 | 这里是 常振林 的博客，与你一起发现更大的世界。"
   keyword = "常振林, Changzhenlin, Changzhenlin, , 常振林的网络日志, 常振林的博客, Changzhenlin Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice"
-  slogan = "路在脚下，心向远方"
+  slogan = "Take the days just one at a time"
 
   image_404 = "img/404-bg.jpg"
   title_404 = "你来到了没有知识的荒原 :("
@@ -37,7 +37,7 @@ home = ["HTML", "RSS", "Algolia"]
   # Sidebar settings
   sidebar_about_description = "Software Developer, Open Source Enthusiast and Life Adventurer"
   #sidebar_avatar = "img/avatar-Changzhenlin.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
-  sidebar_avatar = "img/Changzhenlin.png"      # use absolute URL, seeing it's used in both `/` and `/about/`
+  sidebar_avatar = "tyler/img/wechat.png"      # use absolute URL, seeing it's used in both `/` and `/about/`
 
   featured_tags = true 
   featured_condition_size = 1 
@@ -71,9 +71,9 @@ home = ["HTML", "RSS", "Algolia"]
   email          = "chang_zhenlin@126.com"
   #facebook      = "full profile url in facebook"
   #googleplus    = "full profile url in googleplus"
-  #twitter       = "full profile url in twitter"
+  twitter       = "https://twitter.com/czl_tt"
   linkedin       = "https://www.linkedin.com/in/yourlinkedinid"
-  stackoverflow  = "https://stackoverflow.com/users/yourstackoverflowid"
+  stackoverflow  = "https://stackoverflow.com/users/18425030/tyler"
   #instagram     = "full profile url in instagram"
   github         = "https://github.com/changzhenlin"
   wechat         = "https://changzhenlin.github.io/tyler/img/wechat.jpg"
@@ -104,7 +104,7 @@ home = ["HTML", "RSS", "Algolia"]
   href = "https://unsplash.com"
   
   [[params.addtional_menus]]
-  title =  "BOOKS"
+  title =  "ENGLISH"
   href =  "/top/books/"
   [[params.addtional_menus]]
   title =  "ARCHIVE"
