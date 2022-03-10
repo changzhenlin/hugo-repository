@@ -37,7 +37,7 @@ home = ["HTML", "RSS", "Algolia"]
   # Sidebar settings
   sidebar_about_description = "Software Developer, Open Source Enthusiast and Life Adventurer"
   #sidebar_avatar = "img/avatar-Changzhenlin.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
-  sidebar_avatar = "tyler/img/wechat.png"      # use absolute URL, seeing it's used in both `/` and `/about/`
+  sidebar_avatar = "https://changzhenlin.github.io/tyler/img/me.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
 
   featured_tags = true 
   featured_condition_size = 1 
@@ -58,7 +58,7 @@ home = ["HTML", "RSS", "Algolia"]
   reward = true 
   # reward_guide = "如果这篇文章对你有用,请随意打赏" 
 
-  friends = true
+  friends = false
   bookmarks = false
   about_me = true
 
