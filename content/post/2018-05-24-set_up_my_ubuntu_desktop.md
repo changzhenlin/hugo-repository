@@ -1,85 +1,38 @@
 ---
 layout:     post
-title:      "Everything about Setting Up My Ubuntu Desktop"
-description: "Everything about setting up my own ubuntu desktop, it's just a Note in case I need it later"
-excerpt: "Everything about setting up my own ubuntu desktop, it's just a Note in case I need it later"
-date:    2018-05-24
+title:      "EA安装游戏提示出了点问题"
+description: "开通XGP后，下载EA旗下游戏（双人成形）提示报错"
+excerpt: ""
+date:    2022-03-11
 author:     "常振林"
-image: "/img/2018-05-23-service_2_service_auth/background.jpg"
+image: "/img/home-bg-jeep.jpg"
 published: true 
 tags:
-    - ubuntu 
-URL: "/2018/05/24/set_up_my_ubuntu_desktop/"
+    - Game 
+URL: "/2022/03/11/set_up_my_ea/"
 categories: [ "Tips" ]    
 ---
 
-## Generate SSH Key Pair
+## Cause / origin
 
-```
-ssh-keygen -C "Changzhenlin@gmail.com"
-```
+开通XGP后，下载EA旗下游戏（双人成形）提示报错
 
-## Shadowsocks
+![avatar](https://changzhenlin.github.io/tyler/img/ea.jpg)
 
-Install shadowsokcs    
+## Do something
 
-```
-sudo apt-get install python3-pip
+挂梯子
 
-sudo pip3 install shadowsocks
-```
+用加速器
 
-Create config at ```config/shadowsocks.json```, with the following content:    
+修改host
 
-```
-{
-	"server":"remote-shadowsocks-server-ip-addr",
-	"server_port":443,
-	"local_address":"127.0.0.1",
-	"local_port":1080,
-	"password":"your-passwd",
-	"timeout":300,
-	"method":"aes-256-cfb",
-	"fast_open":false,
-	"workers":1
-}
-```
+。。。
 
-Start a local socks proxy 
+然并卵
 
-```
-sudo sslocal -c config/shadowsocks.json -d start
-```
+## Solved
 
-In case there is an openssl error, modify shadowsocks source file.
+先使用xbox下载一个ea旗下的植物大战僵尸
 
-```
-sudo vi /usr/local/lib/python3.6/dist-packages/shadowsocks/crypto/openssl.py 
-
-:%s/cleanup/reset/gc
-```
-
-Convert shadowsocks socks proxy to http proxy
-
-```
-sudo apt-get install polipo
-
-echo "socksParentProxy = localhost:1080" | sudo tee -a /etc/polipo/config 
-sudo service polipo restart
-```
-
-Http proxy now is available at port 8123
-
-# Set bing wallpaper as desktop background
-
-```
-sudo add-apt-repository ppa:whizzzkid/bingwallpaper
-sudo apt-get update
-sudo apt-get install bingwallpaper
-```
-
-# Use vim mode in bash
-
-```
-echo 'set -o vi'>> ~/.bashrc
-```
+成功后就可以下载其他

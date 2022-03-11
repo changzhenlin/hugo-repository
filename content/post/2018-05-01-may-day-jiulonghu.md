@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "川西秘境探险"
+title:      "EA下载游戏提示报错"
 subtitle:   "2018五一甘堡藏寨，九龙湖自驾游记"
 date:       2018-05-01
 author:     "常振林"
