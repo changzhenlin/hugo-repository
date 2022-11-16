@@ -17,7 +17,7 @@ home = ["HTML", "RSS", "Algolia"]
   SEOTitle = "常振林的博客 | Changzhenlin Blog"
   description = "常振林，程序员, 开源爱好者，生活探险家 | 这里是 常振林 的博客，与你一起发现更大的世界。"
   keyword = "常振林, Changzhenlin, Changzhenlin, , 常振林的网络日志, 常振林的博客, Changzhenlin Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice"
-  slogan = "Take the days just one at a time"
+  slogan = "The way to overcome fear is to face it"
 
   image_404 = "img/404-bg.jpg"
   title_404 = "你来到了没有知识的荒原 :("
