@@ -1,12 +1,12 @@
 ---
 title:       "做一个更出色的程序员"
-subtitle:    "查漏补缺，三省吾身"
+subtitle:    ""
 description: "网上大刘大佬的文章"
 date:        2022-11-20
 author:      "常振林"
 image:       ""
 tags:        ["articel"]
-categories:  ["Tech", "English" ]
+categories:  ["Tech"]
 ---
 
 <!--more-->
