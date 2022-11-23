@@ -132,9 +132,8 @@ params = ["categories", "tags"]
 [params.giscus]
     data_repo="changzhenlin/tyler"
     data-repo-id="R_kgDOG-IwoA"    
-    data_category="Announcements"
-    data_category_id="DIC_kwDOG-IwoM4CSthT"
-    data_mapping="pathname"
+    data_category_id="DIC_kwDOG-IwoM4CSthU"
+    data_mapping="url"
     data_reactions_enabled="1"
     data_emit_metadata="0"
     data_theme="light"
