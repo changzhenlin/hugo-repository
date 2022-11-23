@@ -131,7 +131,7 @@ params = ["categories", "tags"]
     style = "dracula"
 [params.giscus]
     data_repo="changzhenlin/tyler"
-    data-repo_id="R_kgDOG-IwoA"
+    data_repo_id="R_kgDOG-IwoA"
     data_category="General" 
     data_category_id="DIC_kwDOG-IwoM4CSthU"
     data_mapping="pathname"
