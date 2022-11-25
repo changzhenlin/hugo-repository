@@ -1,4 +1,4 @@
-baseurl = "https://changzhenlin.github.io/"
+baseurl = "https://changzhenlin.github.io/tyler/"
 title = "Tyler Blog"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
