@@ -4,7 +4,7 @@ title:      "EA安装游戏提示出了点问题"
 description: "开通XGP后，下载EA旗下游戏（双人成形）提示报错"
 excerpt: ""
 date:    2022-03-11
-author:     "tyler"
+author:     tyler
 image: "/img/home-bg-jeep.jpg"
 published: true 
 tags:

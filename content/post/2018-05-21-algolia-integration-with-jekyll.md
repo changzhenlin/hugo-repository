@@ -3,7 +3,7 @@ layout:     post
 title:      "使用Algolia为Gitpage博客提供站内搜索"
 subtitle:   ""
 date:       2018-05-21 11:00:00
-author:     "tyler"
+author:     tyler
 image: "/img/2018-05-06-cryptocurrency_week1/bitcoin_header.jpg"
 published: false 
 tags:
