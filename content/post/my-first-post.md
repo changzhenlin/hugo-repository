@@ -3,7 +3,7 @@ title:       "做一个更出色的程序员"
 subtitle:    ""
 description: "网上大刘大佬的文章"
 date:        2022-11-20
-author:      “tyler”
+author:      "tyler"
 image:       ""
 tags:        ["articel"]
 categories:  ["Tech"]

@@ -4,7 +4,7 @@ title:      "如何配置docker使用HTTP代理"
 subtitle:   ""
 description: "如何配置docker使用HTTP代理"
 date:       2018-03-13 18:00:00
-author:     “tyler”
+author:     "tyler"
 image: "/img/docker.jpg"
 published: true
 tags:
