@@ -1,94 +1,51 @@
 ---
 layout:     post
-title:      "使用Istio实现应用流量转移"
-subtitle:   "本文翻译自istio官方文档"
-description: "本任务将演示如何将应用流量逐渐从旧版本的服务迁移到新版本。通过Istio，可以使用一系列不同权重的规则（10%，20%，··· 100%）将流量平缓地从旧版本服务迁移到新版本服务。"
-excerpt: "本任务将演示如何将应用流量逐渐从旧版本的服务迁移到新版本。通过Istio，可以使用一系列不同权重的规则（10%，20%，··· 100%）将流量平缓地从旧版本服务迁移到新版本服务。"
-date:     2017-11-07
+title:      "人类和人生的意义"
+description: "摘自阮大的文章 >ruanyifeng.com/blog/2022/10/weekly-issue-228.html"
+date:     2022-11-25
 author:     "常振林"
-image: "/img/istio-traffic-shifting/crossroads.png"
-categories: [ "Tech"]
+categories: [ "Life", "Tips"]
 tags:
-    - Istio
-URL: "/2017/11/07/istio-traffic-shifting/"
+    - Life
+URL: "/2022/11/25/humanandlife/"
 ---
 
-关于Istio的更多内容请参考[istio中文文档](http://istio.doczh.cn/)。
+### 前言
 
-原文参见[Traffic Shifting](https://istio.io/docs/tasks/traffic-management/traffic-shifting.html)。
+季羡林先生2009年就去世了，出版社请了他儿子季承写序言。
 
-本任务将演示如何将应用流量逐渐从旧版本的服务迁移到新版本。通过Istio，可以使用一系列不同权重的规则（10%，20%，··· 100%）将流量平缓地从旧版本服务迁移到新版本服务。
-<!--more-->
-为简单起见，本任务将采用两步将流量从`reviews:v1` 迁移到 `reviews:v3`，权重分别为50%，100%。
+```
+季承（1935-2018），中国科学院高能物理所高级工程师，
+曾任李政道先生主持的中国高等科学技术中心顾问，与李政道有着长达三十年的紧密合作。（摘自百度百科）
 
+```
+[![bg2022102303.webp](https://i.postimg.cc/T32GrqZq/bg2022102303.webp)](https://postimg.cc/gn7fpRcn)
 
-# 开始之前
+网上一查就知道了，季承跟他老爹关系不太好，十多年不相往来。
 
-* 参照文档[安装指南](http://istio.doczh.cn/docs/setup/kubernetes/index.html)中的步骤安装Istio。
+这种情况下，他其实不想写他老爹，但是出版社一定要他写。万般无奈之下，他找了一篇自己不相干的文章作为序言。
+```
 
-* 部署[BookInfo](http://istio.doczh.cn/docs/guides/bookinfo.html) 示例应用程序。
+"我并不敢为先父的著作写序，但青岛出版社的盛情难却，只好写点不是序的序，
+以应所求。正好前些时，我胡乱写了一篇短文《也谈人生》，这篇短文抄在下面，就算交卷了吧。"
 
->  请注意：本文档假设示采用kubernetes部署示例应用程序。所有的示例命令行都采用规则yaml文件（例如`samples/bookinfo/kube/route-rule-all-v1.yaml`）指定的kubernetes版本。如果在不同的环境下运行本任务，请将`kube`修改为运行环境中相应的目录（例如，对基于Consul的运行环境，目录就是`samples/bookinfo/consul/route-rule-all-v1.yaml`）。
+```
+他用作序言的这篇《也谈人生》很短，只有600字，但是谈了一个终极问题：人生的意义是什么？
 
-
-# 基于权重的版本路由
-
-1. 将所有微服务的缺省版本设置为v1.
-
-   ```bash
-   istioctl create -f samples/bookinfo/kube/route-rule-all-v1.yaml
-   ```
-
-1. 在浏览器中打开http://$GATEWAY_URL/productpage,  确认`reviews` 服务目前的活动版本是v1。
-
-   可以看到浏览器中出现BooInfo应用的productpage页面。
-   注意`productpage`显示的评价内容不带星级。这是由于`reviews:v1`不会访问`ratings`服务。
-
-   > 请注意：如果之前执行过 [配置请求路由](http://istio.doczh.cn/docs/tasks/traffic-management/request-routing.html)任务，则需要先注销测试用户“jason”或者删除之前单独为该用户创建的测试规则：
-
-     ```bash
-     istioctl delete routerule reviews-test-v2
-     ```
-
-1. 首先，使用下面的命令把50%的流量从`reviews:v1`转移到`reviews:v3`:
-
-   ```bash
-   istioctl replace -f samples/bookinfo/kube/route-rule-reviews-50-v3.yaml
-   ```
-
-   注意这里使用了`istioctl replace`而不是`create`。
-
-1. 在浏览器中多次刷新`productpage`页面，大约有50%的几率会看到页面中出现带红星的评价内容。
-
-   > 请注意：在目前的Envoy sidecar实现中，可能需要刷新`productpage`很多次才能看到流量分发的效果。在看到页面出现变化前，有可能需要刷新15次或者更多。如果修改规则，将90%的流量路由到v3，可以看到更明显的效果。
-
-1. 当v3版本的`reviews`服务已经稳定运行后，可以将100%的流量路由到`reviews:v3`：
-
-   ```bash
-   istioctl replace -f samples/bookinfo/kube/route-rule-reviews-v3.yaml
-   ```
-
-   此时，以任何用户登录到`productpage`页面，都可以看到带红星的评价信息。
-
-# 理解原理
-
-在这个任务中，我们使用了Istio的带权重路由的特性将流量从老版本的`reviews`服务逐渐迁移到了新版本服务中。
-
-注意该方式和使用容器编排平台的部署特性来进行版本迁移是完全不同的。容器编排平台使用了实例scaling来对流量进行管理。而通过Istio，两个版本的`reviews`服务可以独立地进行scale up和scale down，并不会影响这两个版本服务之间的流量分发。
-
-想了解更多支持scaling的按版本路由功能，请查看[Canary Deployments using Istio](https://istio.io/blog/canary-deployments-using-istio.html)。
-
-# 清理
-
-* 删除路由规则。
-
-  ```bash
-  istioctl delete -f samples/bookinfo/kube/route-rule-all-v1.yaml
-  ```
-
-* 如果不打算尝试后面的任务，请参照[BookInfo cleanup](http://istio.doczh.cn/docs/guides/bookinfo.html#cleanup) 中的步骤关闭应用程序。
+### 正文
 
 
-# 进阶阅读
 
-* 更多的内容请参见[请求路由](http://istio.doczh.cn/docs/concepts/traffic-management/rules-configuration.html)。
+```
+人生有没有意义？人类又有什么意义？
+
+我说，人生是有意义的，而人类则是没有意义的。
+
+询问人类的存在有没有意义，就等于询问地球或宇宙的存在有没有意义一样，是得不到答案的。
+
+人生的意义是什么呢？它的意义就在于为没有意义的人类工作、服务等等，
+其目的不外乎是使人类生活得更好并得以延续。
+
+反正人类是现实的存在，你又是其中一员，你有义务使它发展延续。你只要这样做了，
+你的人生就具有了意义，或者说价值，并不一定要去理会人类存在的意义。
+```
