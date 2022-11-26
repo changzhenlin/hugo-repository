@@ -3,7 +3,7 @@ layout:     post
 title:      "人类和人生的意义"
 description: "摘自阮大的文章 >ruanyifeng.com/blog/2022/10/weekly-issue-228.html"
 date:     2022-11-25
-author:     tyler
+author: "Tyler"
 categories: [ "Life", "Tips"]
 tags:
     - Life

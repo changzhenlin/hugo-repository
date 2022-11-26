@@ -6,8 +6,8 @@ subtitle:   "服务间认证与鉴权"
 description: "除来自用户的访问请求以外，微服务应用中的各个微服务相互之间还有大量的访问,根据应用系统数据敏感程度不同，对于系统内微服务的访问也需要进行相应的安全控制。"
 showonlyimage: false
 excerpt: "除来自用户的访问请求以外，微服务应用中的各个微服务相互之间还有大量的访问,根据应用系统数据敏感程度不同，对于系统内微服务的访问也需要进行相应的安全控制。"
-author:     tyler
-date:     2018-05-23T15:00:00
+author: "Tyler"
+date:     2018-05-23T15
 image: "/img/2018-05-23-service_2_service_auth/background.jpg"
 published: true 
 tags:
