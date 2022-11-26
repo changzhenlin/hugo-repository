@@ -199,7 +199,16 @@
             </li>
     {{ end }}
                 </ul>
-		<p class="copyright text-muted">
+                {{- /* busuanzi plugin */ -}}
+                {{- /* busuanzi plugin */ -}}
+                <!-- {{- partial "plugin/busuanzi.html" (dict "params" .Site.Params.xwi88Cfg.busuanzi "bsz_type" "page-reading") -}}
+		<p class="copyright text-muted"> -->
+            <!-- <div id="busuanzi_container_page_pv"><br>
+                本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+              </div> -->
+              {{- partial "plugin/busuanzi.html" (dict "params" .Site.Params.xwi88Cfg.busuanzi "bsz_type" "footer") -}}
+
+              <p class="copyright text-muted">
                     Copyright &copy; {{ .Site.Title }} {{ now.Year }} {{- if .Site.Params.icp }} | {{ with .Site.Params.icp }}{{ . | markdownify }}{{ end }}{{- end}}
                     <br>
                     <!-- <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://Changzhenlin.com">Huabing</a> |
@@ -227,7 +236,7 @@
       s.parentNode.insertBefore(o, s);
     }
 </script>
-
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <!--
      Because of the native support for backtick-style fenced code blocks
      right within the Markdown is landed in Github Pages,

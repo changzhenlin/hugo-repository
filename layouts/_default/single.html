@@ -33,7 +33,7 @@
                                 {{ end }}
                             {{ end }}
                         {{ else }}
-                            Posted by 
+                            Posted by
                             {{ if .Params.author }}
                                 {{ .Params.author }}
                             {{ else }}
@@ -49,6 +49,9 @@
                             <br>Last Modified on {{ dateFormat "Monday, January 2, 2006" .Params.LastMod }}
                             {{ end }}
                         {{ end }}    
+                        <span style="font-size: 16px;" id="busuanzi_container_page_pv"><br>
+                            累计<span id="busuanzi_value_page_pv"></span>次阅读
+                          </span>
                     </span>
                 </div>
             </div>
