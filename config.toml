@@ -20,7 +20,7 @@ home = ["HTML", "RSS", "Algolia"]
   slogan = "The way to overcome fear is to face it"
 
   image_404 = "img/404-bg.jpg"
-  title_404 = "你来到了没有知识的荒原 :("
+  title_404 = ""
   omit_categories = false
 
   # leancloud storage for page view counter
