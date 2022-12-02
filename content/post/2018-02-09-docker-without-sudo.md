@@ -5,8 +5,7 @@ subtitle:   ""
 description: "如何使用非root用户执行docker命令"
 excerpt: "如何使用非root用户执行docker命令"
 date:       2018-02-09 10:00:00
-author: "Tyler"
-image:     "/img/docker.jpg"
+author: Tyler
 published: true
 showtoc: false 
 tags:
