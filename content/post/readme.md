@@ -1,6 +1,6 @@
----
+<!-- ---
 layout:     post
-title:      "Clean White Theme for Hugo"
+title:      "Clean White Theme for Hugo1"
 subtitle:   "How to set up this theme"
 date:       2019-01-09
 author: 常振林
@@ -157,4 +157,4 @@ Thanks for the great jobs of [huxblog Jekyll Theme](https://github.com/Huxpro/hu
 If you find any problems, please feel free to [raise an issue](https://github.com/Changzhenlin/hugo-theme-cleanwhite/issues/new) or create a pull request to fix it. 
 
 If it's helpful for you, I would appreciate it if you could star this repository, thanks!
-
+ -->
