@@ -4,7 +4,7 @@ subtitle: "Generative Pretrained Transformer 3"
 description: "解决无法在你所在的国家或地区提供服务"
 date:        2022-12-07
 author: Tyler
-tags:        ["tips", "vpn"]
+tags:        ["tips", "vpn","AI"]
 categories:  ["Life","Tech"]
 ---
 
