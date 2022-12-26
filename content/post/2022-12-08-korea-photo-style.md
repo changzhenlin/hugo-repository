@@ -4,9 +4,9 @@ description: "instagram.com/yan_pic"
 date:        2022-12-08
 author: Tyler
 tags:        ["photo", "color"]
-categories:  ["Life" ]
+categories:  ["Life","Photo" ]
 ---
-[![Screenshot 2022-12-08 at 2.11.25 PM.png](https://pic.jitudisk.com/public/2022/12/08/a63a80f3fa3c9.png)](https://pic.jitudisk.com/public/2022/12/08/a63a80f3fa3c9.png)
+[![49f32f5c50d99dd7b6b4c1e85218cfdd.png](https://s1.imagehub.cc/images/2022/12/26/49f32f5c50d99dd7b6b4c1e85218cfdd.png)](https://www.imagehub.cc/image/euHDA)
 ### 影调
 对比强烈，黑色白色为正常亮度。在保证不过爆的情况下，增加白色和高光亮度，降低阴影和黑色亮度，提升整体对比度
 ### 色彩
