@@ -1,5 +1,5 @@
 ---
-title:       "韩国摄影师yan_pic的调色风格🌈"
+title:       "韩国摄影师yan_pic颜色🌈风格"
 description: "instagram.com/yan_pic"
 date:        2022-12-08
 author: Tyler
