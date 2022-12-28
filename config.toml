@@ -17,7 +17,7 @@ home = ["HTML", "RSS", "Algolia"]
   SEOTitle = "常振林的博客 | Changzhenlin Blog"
   description = "常振林，程序员, 摄影爱好者，学生 | 这里是 常振林 的博客，与你一起发现更大的世界。"
   keyword = "常振林, Changzhenlin, Changzhenlin, , 常振林的网络日志, 常振林的博客, Changzhenlin Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Kubernetes, Microservice"
-  slogan = "Keep Code Keep Record"
+  slogan = "Keep Code & Keep Record"
 
   image_404 = "img/404-bg.jpg"
   title_404 = ""
