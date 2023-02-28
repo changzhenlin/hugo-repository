@@ -1,5 +1,5 @@
 ---
-title: "git推送冲突🪢问题"
+title: "git推送冲突🥶问题"
 description: "git config pull.rebase true/false"
 date: 2023-02-07
 author: Tyler
